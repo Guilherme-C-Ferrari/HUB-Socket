@@ -14,7 +14,6 @@ public class HUBSocket {
             while(true) {
                 Socket sckt = serverSck.accept();
                 new SocketThread(sckt).start();
-                SocketsList.getInstance().addSocket(sckt);
                 System.out.println(
                         SocketsList.getInstance().getListaSockets()
                 );
