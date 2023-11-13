@@ -24,7 +24,7 @@ public class SocketThread extends Thread{
                 if ((char) ret == '§') {
                 nome = nome.replace("§", "");
                 nome = nome.replace("Â", "");
-                nome = nome.replace("Hey, ", "");
+                nome = nome.replace("Checkin: ", "");
                 System.out.println(nome);
                 SocketsList.getInstance().addSocket(nome, socket.getInetAddress().toString());
                 }
