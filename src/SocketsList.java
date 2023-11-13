@@ -33,12 +33,9 @@ public class SocketsList {
         return sockets.remove(sckt);
     }
 
-    // não se deve retornar a lista do objeto
-    // de forma direta. Deve-se envar uma cópia
     public List<Socket> getSockets() {
         ArrayList<Socket> list = new ArrayList<>(socketsMap.values());
         return list;
-
     }
 
     public String getListaSockets() {
